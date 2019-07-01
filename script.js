@@ -65,7 +65,7 @@ function checkGuess() {
     // if the 1st number in the guess matches the 1st number in the answer,
     // add 1 to correctNumber
     correctNumber++;
-  } else if (answer.indexOf(guess0) > 0) {
+  } else if (answer.indexOf(guess0) >= 0) {
     // indexOf checks the answer array to see if 1st number is there
     // if the 1st number is in the answer, add 1 to presentNumber
     presentNumber++;
@@ -78,7 +78,7 @@ function checkGuess() {
   if (guess1 === answer [1]){
     correctNumber++;
   }
-  else if (answer.indexOf(guess1) > 0) {
+  else if (answer.indexOf(guess1) >= 0) {
     presentNumber++;
   } else {
     wrongNumber++;
@@ -87,7 +87,7 @@ function checkGuess() {
   if (guess2 === answer [2]) {
     correctNumber++;
   }
-  else if (answer.indexOf(guess2) > 0) {
+  else if (answer.indexOf(guess2) >= 0) {
     presentNumber++;
   }
   else {
@@ -97,7 +97,7 @@ function checkGuess() {
   if (guess3 === answer [3]) {
     correctNumber++;
   }
-  else if(answer.indexOf(guess3) > 0) {
+  else if(answer.indexOf(guess3) >= 0) {
     presentNumber++;
   }
   else {
@@ -171,7 +171,7 @@ function addGuessToPage(results) {
   // The player has 10 chances to guess the code. Each time a guess is
   // added to the screen, increase the guessCount by one.
   guessCount++;
-  if (guessCount > 10) {
+  if (guessCount === 10) {
     showGameResults(winner)
   }
   /*
