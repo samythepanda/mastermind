@@ -189,6 +189,7 @@ function showGameResults(result) {
   else {
     gameResultElement.insertAdjacentHTML("beforeend", "<h2>Better luck next time!</h2>");
   }
+}
   /*
     This function takes in result, which is passed as the winner variable,
     which is a Boolean. If it's true, we want to show the HTML declaring a winner.
