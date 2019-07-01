@@ -197,7 +197,8 @@ function showGameResults(result) {
     );
   }
 
-  // show reset button
+  // show 
+  button
   reset.classList.remove("hidden");
   // hide instructions & submit button
   submit.classList.add("hidden");
